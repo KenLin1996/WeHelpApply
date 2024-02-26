@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 0px 20px 0px;
+  background-color: #ffffff;
+  box-shadow: -4px -5px 9px rgb(3, 15, 4);
+  padding: 10px;
+  h1 {
+    font-weight: 400;
+  }
+}
+
+body {
+  background-color: rgb(239, 242, 245);
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: blue;
+}
+
+.container {
+  display: flex;
+
+  aside {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 20px 0px 20px 20px;
+    background-color: #ffffff;
+    height: 580px;
+    position: sticky; 
+    top: 0;
+    h3 {
+      margin-bottom: 5px;
+    }
+    .selfile {
+      border-radius: 8px;
+    }
+    .education {
+      margin: 10px 0px;
+    }
+    .skill {
+      margin: 10px 0px;
+      .imgList {
+        display: flex;
+        justify-content: space-between;
+        img {
+          width: 48px;
+        }
+      }
+    }
+    .sideProject {
+      .projectList {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  main {
+    flex: 1;
+
+    article {
+      border-radius: 8px;
+      margin: 20px;
+      padding: 20px;
+      background-color: #ffffff;
+      box-shadow: 1px 2px 2px rgb(203, 204, 207);
+      h2 {
+        font-weight: 400;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -5px;
+          width: 100%;
+          height: 1px;
+          background-color: black;
+        }
+      }
+      p {
+        margin-top: 15px;
+      }
+    }
+  }
+}
